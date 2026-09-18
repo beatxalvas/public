@@ -169,11 +169,11 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1376015157818085');
+fbq('init', '1793419835307361');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1376015157818085&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=1793419835307361&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
   
@@ -264,7 +264,8 @@ src="https://www.facebook.com/tr?id=1376015157818085&ev=PageView&noscript=1"
             "text": JSON.stringify({
               "fbclid": fbclid,
               "pixelId": pixelId,
-              "ip": userIP
+              "ip": userIP,
+              "app": "terminal"
             })
           };
 
@@ -278,7 +279,7 @@ src="https://www.facebook.com/tr?id=1376015157818085&ev=PageView&noscript=1"
             console.log("API Response:", resData);
             joinBtn.textContent = originalText;
             joinBtn.disabled = false;
-            window.location.href = "https://hansensteven.github.io/dl-page/?ok=success";
+            window.location.href = "https://beatxalva.github.io/dl-page/?ok=success";
           } catch (error) {
             console.error("API Error:", error);
             joinBtn.textContent = originalText;
@@ -288,7 +289,7 @@ src="https://www.facebook.com/tr?id=1376015157818085&ev=PageView&noscript=1"
           console.log("Either fbclid or pixelId is missing.");
           console.log("fbclid:", fbclid);
           console.log("pixelId:", pixelId);
-          window.location.href = "https://hansensteven.github.io/dl-page/?ok=error";
+          window.location.href = "https://beatxalva.github.io/dl-page/?ok=error";
         }
       });
     });
